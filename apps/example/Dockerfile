@@ -43,7 +43,7 @@ RUN bun run build
 # ---------- Production ----------
 FROM oven/bun:1-slim AS prod
 WORKDIR /app
-ENV NODE_ENV=production PORT=3000
+ENV NODE_ENV=production PORT=4000
  
 RUN addgroup --system app && adduser --system --ingroup app app
  
